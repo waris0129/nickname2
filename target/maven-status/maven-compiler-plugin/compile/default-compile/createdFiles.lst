@@ -1,0 +1,6 @@
+com/nickname/impl/NickNameImp.class
+com/nickname/service/NickNameService.class
+com/nickname/entity/NickName.class
+com/nickname/controller/NickNameController.class
+com/nickname/NickName.class
+com/nickname/controller/NickNameApi.class

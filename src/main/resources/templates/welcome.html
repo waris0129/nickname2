@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+<title>Home</title>
+<meta charset="utf-8" />
+</head>
+<body>
+
+
+<div>
+	<div>
+		<div>
+			<h2>Welcome to Post Nick Name!</h2>
+		</div>
+		<div>
+			<div>
+				<form th:action="@{/}" method="post" th:object="${nickname}">
+					<div>
+						<label for="nickname">Nick Name</label>
+						<input type="text" id="nickname" name="nickname"
+							   th:field="*{nickName}"    placeholder="input your nick name"/>
+					</div>
+					<input type="submit" name="login-submit" id="login-submit"
+						   value="Post"/>
+				</form>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div>
+	<div>
+		<table>
+			<thead>
+			<tr>
+				<th scope="col">#</th>
+				<th scope="col">nick name</th>
+			</tr>
+			</thead>
+			<tbody>
+			<tr th:each="each : ${nickNames}">
+				<th scope="row" th:text="${each.id}">#</th>
+				<td th:text="${each.nickName}">nick name</td>
+			</tr>
+			</tbody>
+		</table>
+	</div>
+</div>
+
+
+</body>
+</html>
