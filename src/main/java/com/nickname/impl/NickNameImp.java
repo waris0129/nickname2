@@ -5,6 +5,7 @@ import com.nickname.service.NickNameService;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
+import java.util.stream.Collectors;
 
 @Service
 public class NickNameImp implements NickNameService{
@@ -31,7 +32,7 @@ public class NickNameImp implements NickNameService{
 
     @Override
     public List<NickName> getNamesAndIds() {
-        return nickNames;
+        return nickNames.stream().sorted().collect(Collectors.toList());
     }
 
     @Override
