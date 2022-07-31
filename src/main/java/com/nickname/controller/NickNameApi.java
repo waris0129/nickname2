@@ -14,6 +14,7 @@ public class NickNameApi {
     @Autowired
     private NickNameService nickNameService;
 
+
     @PostMapping("api/post/{name}")
     public List<NickName> postNickName(@PathVariable("name") String name){
 
