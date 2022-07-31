@@ -11,5 +11,4 @@ public interface NickNameService {
 
     void saveName(NickName nickName);
 
-
 }
