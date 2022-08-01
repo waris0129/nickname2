@@ -17,7 +17,4 @@ public class NickName {
     public ModelMapper modelMapper() {
         return new ModelMapper();
     }
-
-
-
 }
