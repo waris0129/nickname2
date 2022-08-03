@@ -23,6 +23,15 @@ public class NickNameImp implements NickNameService{
         NickName nickName3 = new NickName();
         nickName3.setId(3l);
         nickName3.setNickName("Kerry");
+        NickName nickName4 = new NickName();
+        nickName4.setId(4l);
+        nickName4.setNickName("Harry");
+        NickName nickName5 = new NickName();
+        nickName5.setId(5l);
+        nickName5.setNickName("James");
+        NickName nickName6 = new NickName();
+        nickName6.setId(6l);
+        nickName6.setNickName("William");
 
         this.nickNames = nickNames;
         nickNames.add(nickName1);
