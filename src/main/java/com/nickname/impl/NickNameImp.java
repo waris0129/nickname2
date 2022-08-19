@@ -37,9 +37,9 @@ public class NickNameImp implements NickNameService{
         nickNames.add(nickName1);
         nickNames.add(nickName2);
         nickNames.add(nickName3);
-        nickNames.add(nickName4);
-        nickNames.add(nickName5);
-        nickNames.add(nickName6);
+//        nickNames.add(nickName4);
+//        nickNames.add(nickName5);
+//        nickNames.add(nickName6);
     }
 
     @Override
